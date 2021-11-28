@@ -1,0 +1,45 @@
+<html>
+    <head>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+<tittle>MVM-Check</tittle> 
+</head>
+<body style="background-color: blue;">
+    <label>Jai Guru Dev
+        <sup>
+            <img src="unnamed.jpg"style="width: 75px;height: 75px;">
+        </sup>
+    </label>
+    <input type="text" class="form-control" placeholder="Enter code" id="check">
+    <br>
+    <br>
+    <button id="my-btn" class="btn-danger" >Check</button>
+</body>
+<script>
+    document.getElementById("my-btn").onclick=function(){
+        nyth=document.getElementById("check").value;
+        if(nyth=="mvm_super"){
+            window.location="mvm_member_name.html";
+            localStorage.setItem("Password",nyth);
+            var synth= window.speechSynthesis;
+    speak_data="The password was correct";
+    var utter_this= new SpeechSynthesisUtterance(speak_data);
+    synth.speak(utter_this);
+        }
+      else{
+        var synth= window.speechSynthesis;
+    speak_data="The password was incorrect";
+    var utter_this= new SpeechSynthesisUtterance(speak_data);
+    synth.speak(utter_this);
+          window.location="mvm.html";
+      }
+    }
+</script>
+</html>

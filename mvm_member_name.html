@@ -1,0 +1,43 @@
+<html>
+    <head>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>MVM-USER ROOM</title>
+</head>
+<body>
+<style>
+    body{
+        background-color: beige;
+        text-align: center;
+    }
+</style>
+<center>
+    <div>
+    <img src="unnamed.jpg" style="width: 75px;height: 75px;">
+    </div>
+    <br>
+    <br>
+    <div class="user_room" id="user_div">
+        <label>After typing your name type member (or) Teacher so that the parents or students don't get confused.</label>
+    <input type="text" class="form-control" id="user_name1" placeholder="Enter Member name">
+    <br>
+    <br>
+    <input type="text" class="form-control" id="room_name2" placeholder="Enter room name">
+    <br>
+    <br>
+    <button class="text-success" id="uy">Enter room</button>
+    <br>
+    <br>
+    <button class="btn-warning" id="pr3">Check room name</button>
+    </div>
+</center>
+<script src="mvm_user_room.js"></script>
+</body>
+</html>
